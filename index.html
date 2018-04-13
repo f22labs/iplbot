@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>IPL SlackBot</title>
+  <meta name="description" content="A slack bot to get sports information about Indian Premier League (IPL)">
+  <meta name="keywords" content="ipl, slack, bot, indian premier league, slash commands, cricket, score, live score">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Tangerine" type="text/css">
+</head>
+
+<style>
+  body{
+    font-family: 'Tangerine', sans-serif;
+    background: #262A33;
+    text-align: center;
+    color: white;
+  }
+  p{
+    font-size: 24px;
+  }
+  #title{
+    font-size: 42px;
+    margin-bottom: 15px;
+  }
+  .yellow{
+    color: #F2A633;
+  }
+  a#add{
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    color: #262A33;
+    padding: 10px;
+    background: white;
+    font-size: 20px;
+  }
+  img#add{
+    height: 30px;
+    vertical-align: middle;
+  }
+  div.screenshot{
+    
+  }
+  div.screenshot img{
+    width: 100%;
+  }
+  div.timeline{
+    height: 50px;
+    width: 1px;
+    margin: 0 auto;
+    border-left: 1px solid white;
+  }
+  div.dull p{
+    opacity: 0.7;
+    font-size: 16px;
+  }
+  div.dull a{
+    color: white;
+    opacity: 0.7;
+  }
+  @media (min-width: 768px){
+    div.screenshot{
+      width: 70%;
+      margin: 0 auto; 
+    }
+  }
+</style>
+<body>
+  <p id="title"><b>IPL Bot</b></p>
+  <p class="yellow">
+    A slack bot to get information about Indian Premier League
+  </p>
+  <br>
+  <a href="https://slack.com/oauth/authorize?client_id=4214356447.343308088790&scope=incoming-webhook,commands" id="add"><img id="add" src="https://cdn.iconscout.com/public/images/icon/free/png-128/slack-logo-3f1fe5e6564b9241-128x128.png" alt=""> Add To Slack</a>
+  <div class="timeline"></div>
+  <div class="screenshot">
+    <img src="https://image.ibb.co/guP4Mn/ipl_command.png" alt="">
+  </div>
+  <div class="timeline"></div>
+  <div class="screenshot">
+    <img src="https://image.ibb.co/fmjh7S/ipl_result.png" alt="">  
+  </div>
+
+  <div class="dull" style="margin-top: 40px;">
+    <p>Created By <a href="http://f22labs.com/">F22 Labs</a></p>
+    <p>Data Powered by CricBuzz</p>
+  </div>
+  
+</body>
+</html>
